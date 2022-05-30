@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add _D prettier
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\User\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\User\AppData\Local\Yarn\bin;
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/_D: Not found
+      at Request.params.callback [as _callback] (C:\Users\User\AppData\Roaming\nvm\v16.14.2\node_modules\yarn\lib\cli.js:66138:18)
+      at Request.self.callback (C:\Users\User\AppData\Roaming\nvm\v16.14.2\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (C:\Users\User\AppData\Roaming\nvm\v16.14.2\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (C:\Users\User\AppData\Roaming\nvm\v16.14.2\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
