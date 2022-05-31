@@ -10,7 +10,7 @@
 
 function Housing() {
     //recup id
-    const {id} = 
+    const {id} = [1] ;
     //recup loc
    // const {}
 }
@@ -18,7 +18,7 @@ function Housing() {
 return (
     <div className="housing">
         <div className="picture">
-            //carousel
+            //carousel picture
         </div>
         <div className="content">
             <div className="head">

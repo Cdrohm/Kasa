@@ -4,10 +4,10 @@ import Photo from "../assets/paysage1.png";
 //import
 
 function Home() {
-    const
-    const
+    //const
+    //const
 
-    if(){}
+   // if(){}
     return (
         <div>
             <Photo />
