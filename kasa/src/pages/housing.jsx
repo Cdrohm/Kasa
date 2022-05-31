@@ -13,7 +13,7 @@ function Housing() {
     const {id} = [1] ;
     //recup loc
    // const {}
-}
+
 
 return (
     <div className="housing">
@@ -44,5 +44,5 @@ return (
         </div>
     </div>
 )
-
+}
 export default Housing;

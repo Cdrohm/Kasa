@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 import Header from './components/header';
 import Footer from './components/footer';
@@ -7,23 +8,23 @@ import About from './pages/about';
 import Error from './pages/error'
 import Home from './pages/home';
 
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+
+function Router() {
   return (
     <React.StrictMode>
       /*API router*/
       <BrowserRouter className="" basename="">
-        //chercher logements
+        /*chercher logements*/
         <div className="App">
             <div className='content'>
               <Header />
                 <Routes>
-                    <Routes path="/" element={<Home />} />
-                    <Routes path="/" element={<Housing />} />
-                    <Routes path="/" element={<About />} />
-                    <Routes path="/" element={<Error />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Housing />} />
+                    <Route path="/" element={<About />} />
+                    <Route path="/" element={<Error />} />
                 </Routes>
             </div>
             <Footer />
@@ -31,10 +32,10 @@ function App() {
 
       </BrowserRouter>
 
-    <App />
+    
   </React.StrictMode>
 
   );
 }
 
-export default App;
+export default Router;
