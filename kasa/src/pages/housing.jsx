@@ -1,5 +1,5 @@
-//import
-//import
+import {Navigate, useParams} from "react-router-dom";
+import {useContext} from "react";
 //import
 
 //import
@@ -43,6 +43,7 @@ return (
             </dir>
         </div>
     </div>
-)
+);
 }
+
 export default Housing;
