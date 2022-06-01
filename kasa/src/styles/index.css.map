@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "ACAA,SAAS;AACT,OAAO,CAAC,iIAAI;AAEZ,UAAU",
+    "sources": [
+        "index.scss",
+        "_variables.scss",
+        "_housing.scss",
+        "_header.scss",
+        "_footer.scss",
+        "_error.scss",
+        "_about.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

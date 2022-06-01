@@ -14,11 +14,18 @@ function Housing() {
     //recup loc
    // const {}
 
+            //carousel picture
+                            //tags
+                    //rates stars
+
+                //description
+                //equipements
+
+
 
 return (
     <div className="housing">
         <div className="picture">
-            //carousel picture
         </div>
         <div className="content">
             <div className="head">
@@ -30,16 +37,12 @@ return (
                             {location}
                         </h3>
                         <div className="tags">
-                            //tags
                         </div>
                 </div>
                 <div className="rates">
-                    //rates stars
                 </div>
             </div>
             <dir className="textes">
-                //description
-                //equipements
             </dir>
         </div>
     </div>
