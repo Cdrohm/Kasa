@@ -1,0 +1,19 @@
+.Header {
+    display: flex;
+    align-items: flex-end;
+    margin: 50px 0;
+    width: 100%;
+    // height: 150px;
+    font-weight: 500;
+    font-size: 24px;
+    // border: 1px dashed red;
+    img {
+        width: auto;
+    }
+    nav {
+        margin-left: auto;
+        .Link {
+            margin-left: 60px;
+        }
+    }
+}

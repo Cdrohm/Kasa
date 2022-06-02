@@ -1,6 +1,7 @@
 import Photo from "../assets/paysage1.png";
 //import grid 3/ ligne
-//import
+
+import { useContext } from "react";
 //import
 
 function Home() {

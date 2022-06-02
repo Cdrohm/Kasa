@@ -1,4 +1,4 @@
-//import
+//import txt 
 
 function About() {
     const txt = {
@@ -9,7 +9,7 @@ function About() {
     }
 
     return(
-        <div className=""></div>
+        <div className="about"></div>
     )
 }
 
