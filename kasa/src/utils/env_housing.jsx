@@ -1,8 +1,21 @@
 import { createContext, useState } from "react";
-//import housing by fetch?
+import housing from "../app/fetch";
 
 export const envHousing = createContext();
 
-export const lessor = ({ children }) => {
-    const [locs, setLocs ] = useState(housingfetch.get());
+export const Lessor = ({ children }) => {
+    const [locs, setLocs ] = useState(housing.get());
+    function getLocation(id) {
+        return locs.filter((loc) => loc["id"] === id);
+    }
+
+    function getIDs() {
+        return locs.map(loc => loc.id);
+    }
+
+    return (
+        <envHousing.Lessor value={{ locs, setLocs, getLocation, getIDs}}>
+            {children}
+        </envHousing.Lessor>
+    )
 }

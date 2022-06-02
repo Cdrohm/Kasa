@@ -2,11 +2,11 @@ import Photo from "../assets/paysage1.png";
 //import grid 3/ ligne
 
 import { useContext } from "react";
-//import
+import { envHousing } from '../utils/env_housing';
 
 function Home() {
-    //const
-    //const
+    const { locs, getIDs } = useContext(envHousing);
+    const locIDs = getIDs();
 
    // if(){}
     return (
