@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import housing from "../app/fetch";
 
-export const envHousing = createContext();
+export const EnvHousing = createContext();
 
 export const Lessor = ({ children }) => {
     const [locs, setLocs ] = useState(housing.get());
@@ -14,8 +14,8 @@ export const Lessor = ({ children }) => {
     }
 
     return (
-        <envHousing.Lessor value={{ locs, setLocs, getLocation, getIDs}}>
+        <EnvHousing.Lessor value={{ locs, setLocs, getLocation, getIDs}}>
             {children}
-        </envHousing.Lessor>
+        </EnvHousing.Lessor>
     )
 }
