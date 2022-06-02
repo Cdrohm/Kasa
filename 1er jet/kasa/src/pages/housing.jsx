@@ -31,10 +31,10 @@ return (
             <div className="head">
                 <div className="title">
                         <h1>
-                            {title}
+                            title
                         </h1>
                         <h3>
-                            {location}
+                            location
                         </h3>
                         <div className="tags">
                         </div>

@@ -15,6 +15,7 @@ import Home from '../pages/home';
 
 
 function AppRouter() {
+  console.log ("hello");
   return (
     <React.StrictMode>
       <BrowserRouter className="container" basename="kasa">
@@ -25,7 +26,7 @@ function AppRouter() {
                     <Route path="/" element={<Home />} />
                     <Route path="/housing/?" element={<Housing />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/" element={<Error />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
             </div>
             <Footer />
