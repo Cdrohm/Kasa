@@ -1,3 +1,4 @@
+//texts + icon for descritpion / equipements / fiabilité / respect / service / responsabilité
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 

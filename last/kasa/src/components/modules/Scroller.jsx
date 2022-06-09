@@ -1,3 +1,4 @@
+//Scroller / Spinner for picture 
 // export async for preload
 /**
  * array of urls => return promise resolves when all pictures are loaded

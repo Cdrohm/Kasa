@@ -1,3 +1,4 @@
+//Grid for pictures
 import Photo from "./Picture";
 import { Link } from "react-router-dom";
 

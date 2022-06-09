@@ -6,7 +6,7 @@ import Tags from "../components/modules/Tags";
 import Lessor from "../components/modules/Lessor";
 import Rates from "../components/modules/Rates";
 import Texts from "../components/modules/Texts";
-import Carousel from "../components/modules/Carousel";
+import Carrousel from "../components/modules/Carrousel";
 
 function Housing() {
 	const { idPage } = useParams();
@@ -69,7 +69,7 @@ function Housing() {
 	return (
 		<div className="Logement">
 			<div className="cover">
-				<Carousel loc={loc} />
+				<Carrousel loc={loc} />
 			</div>
 			<div className="content">
 				<div className="top">
