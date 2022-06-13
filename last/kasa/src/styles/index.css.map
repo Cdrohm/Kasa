@@ -3,7 +3,21 @@
     "mappings": "ACOA,OAAO,CAAC,iIAAI",
     "sources": [
         "index.scss",
-        "_variables.scss"
+        "_variables.scss",
+        "_about.scss",
+        "_error.scss",
+        "_footer.scss",
+        "_header.scss",
+        "_housing.scss",
+        "modules/_carrousel.scss",
+        "modules/_carrouselPic.scss",
+        "modules/_grid.scss",
+        "modules/_lessor.scss",
+        "modules/_photo.scss",
+        "modules/_rates.scss",
+        "modules/_scroller.scss",
+        "modules/_tags.scss",
+        "modules/_texts.scss"
     ],
     "names": [],
     "file": "index.css"
