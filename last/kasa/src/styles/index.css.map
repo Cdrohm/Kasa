@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACOA,OAAO,CAAC,iIAAI",
+    "sources": [
+        "index.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
