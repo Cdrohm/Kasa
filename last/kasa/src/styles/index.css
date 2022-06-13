@@ -13,6 +13,31 @@
   display: none;
 }
 
+.Footer {
+  margin-top: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+  background-color: black;
+  color: white;
+}
+
+.logo_footer {
+  width: 120px;
+  -webkit-filter: brightness(1000%);
+          filter: brightness(1000%);
+  margin-bottom: 40px;
+}
+
 .Header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +66,7 @@
 .Grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr)[];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   grid-auto-rows: minmax(100px, auto);
@@ -76,7 +101,8 @@ body,
 body {
   width: 100%;
   margin: 0;
-  font-family: Montserrat, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Montserrat, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+ "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

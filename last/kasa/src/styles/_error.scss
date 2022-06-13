@@ -1,0 +1,26 @@
+.Error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 10% 0;
+    width: 100%;
+    color: $red;
+    text-align: center;
+}
+
+.error_num {
+    font-size: 300px;
+    font-weight: 600;
+}
+
+.error_sub {
+    margin: 5% 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.back_link {
+    &:visited {
+        color: $red
+    }
+}
