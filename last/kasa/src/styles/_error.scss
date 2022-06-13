@@ -4,16 +4,16 @@
     align-items: center;
     padding: 2% 0 10% 0;
     width: 100%;
-    color: $red;
+    color: $primary;
     text-align: center;
 }
 
-.error_num {
+.error_name {
     font-size: 300px;
     font-weight: 600;
 }
 
-.error_sub {
+.error_txt {
     margin: 5% 0;
     font-size: 30px;
     font-weight: 500;
@@ -21,6 +21,6 @@
 
 .back_link {
     &:visited {
-        color: $red
+        color: $primary;
     }
 }

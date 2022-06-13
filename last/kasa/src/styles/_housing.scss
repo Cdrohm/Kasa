@@ -1,0 +1,33 @@
+.House {
+	.content {
+		.top {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			h1,
+			h3 {
+				font-weight: 500;
+				color: $primary;
+			}
+			h1 {
+				font-size: 36px;
+			}
+			h3 {
+				font-size: 18px;
+				margin-top: -15px;
+			}
+			.lessor_rates {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		}
+		.texts {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 50px;
+			margin-bottom: 100px;
+			align-items: flex-start;
+		}
+	}
+}

@@ -67,7 +67,7 @@ function Housing() {
 	} = loc;
 
 	return (
-		<div className="Logement">
+		<div className="House">
 			<div className="cover">
 				<Carrousel loc={loc} />
 			</div>
