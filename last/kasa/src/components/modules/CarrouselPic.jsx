@@ -1,4 +1,3 @@
-// pictures in carrousel
 function CarrouselPic({ i, len, picture }) {
 	return (
 		<>
