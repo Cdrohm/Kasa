@@ -1,7 +1,7 @@
 //photos background + scroller + houses
 import paysage1 from "../../assets/paysage1.png";
 import paysage2 from "../../assets/paysage2.png";
-import Scroller, { cachePicture } from "./Scroller";
+import Scroller, { cachePictures } from "./Scroller";
 import { useState, useEffect } from "react";
 
 function Photo({ hpImg, loc }) {
@@ -17,7 +17,7 @@ function Photo({ hpImg, loc }) {
 	const [isLoading, setIsLoading] = useState(true);
 
 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	useEffect(() => cachePicture(pictures, setIsLoading), []);
+	useEffect(() => cachePictures(pictures, setIsLoading), []);
 
 	return (
 		<div className="Photo" style={{ position: !hpImg && "absolute" }}>

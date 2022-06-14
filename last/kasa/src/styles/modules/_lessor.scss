@@ -1,0 +1,17 @@
+.Lessor {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 20px 0 10px 0;
+	.name {
+		font-size: 18px;
+		color: $primary;
+		margin: 0 10px;
+	}
+	.picture {
+		img {
+			width: 64px;
+			border-radius: 50%;
+		}
+	}
+}

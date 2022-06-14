@@ -17,7 +17,7 @@ function switchText(type) {
 
 function Texts({ type, text }) {
 	return (
-		<div className="Textual hide">
+		<div className="Texts hide">
 			<h3 className="cap" onClick={() => switchText(type)}>
 				<span>{type}</span>
 				<FontAwesomeIcon

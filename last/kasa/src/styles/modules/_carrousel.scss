@@ -1,0 +1,58 @@
+.Carrousel {
+	border-radius: 30px;
+	overflow: hidden;
+	.photo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 415px;
+		background-position: 50%;
+		background-size: cover;
+		background-color: $greyL;
+	}
+	.container {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 100%;
+		height: 415px;
+		background-color: $greyL;
+	}
+	.arrows {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.arrow {
+			padding: 20px;
+			font-size: 80px;
+			color: white;
+			filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+			&:active {
+				transform: scale(120%);
+				color: $primary;
+			}
+		}
+		.arrow_left {
+			padding-right: 50px;
+			&:hover {
+				cursor: pointer;
+				animation: 0.5s swipeLeft;
+			}
+		}
+		.arrow_right {
+			padding-left: 50px;
+			&:hover {
+				cursor: pointer;
+				animation: 0.5s swipeRight;
+			}
+		}
+	}
+}

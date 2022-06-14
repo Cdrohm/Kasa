@@ -488,6 +488,125 @@ template {
   display: none;
 }
 
+.Carrousel {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.Carrousel .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 415px;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #F7F7F7;
+}
+
+.Carrousel .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 415px;
+  background-color: #F7F7F7;
+}
+
+.Carrousel .arrows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Carrousel .arrows .arrow {
+  padding: 20px;
+  font-size: 80px;
+  color: white;
+  -webkit-filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.Carrousel .arrows .arrow:active {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  color: #FF6060;
+}
+
+.Carrousel .arrows .arrow_left {
+  padding-right: 50px;
+}
+
+.Carrousel .arrows .arrow_left:hover {
+  cursor: pointer;
+  -webkit-animation: 0.5s swipeLeft;
+          animation: 0.5s swipeLeft;
+}
+
+.Carrousel .arrows .arrow_right {
+  padding-left: 50px;
+}
+
+.Carrousel .arrows .arrow_right:hover {
+  cursor: pointer;
+  -webkit-animation: 0.5s swipeRight;
+          animation: 0.5s swipeRight;
+}
+
+.ci pict {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 20px;
+}
+
+.ci pict span {
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
 .Grid {
   display: -ms-grid;
   display: grid;
@@ -509,6 +628,147 @@ template {
   cursor: pointer;
 }
 
+.Lessor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 10px 0;
+}
+
+.Lessor .name {
+  font-size: 18px;
+  color: #FF6060;
+  margin: 0 10px;
+}
+
+.Lessor .picture img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.Rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.Rates .full {
+  font-size: 24px;
+  color: #FF6060;
+}
+
+.Rates .empty {
+  font-size: 24px;
+  color: #F7F7F7;
+}
+
+.Tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Tags .tag_elt {
+  border-radius: 15px;
+  padding: 4px 10px;
+  margin: 5px 20px 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #FF6060;
+}
+
+.Texts {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+  height: 100%;
+}
+
+.Texts .chevron {
+  display: block;
+}
+
+.Texts .chevron_down {
+  display: none;
+}
+
+.Texts .cap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7px 15px;
+  margin: 0;
+  font-weight: 600;
+  border-radius: 10px;
+  color: white;
+  background-color: #FF6060;
+}
+
+.Texts .cap:hover {
+  cursor: pointer;
+}
+
+.Texts .cap:hover > .chevron {
+  -webkit-animation: 0.5s alternate shake;
+          animation: 0.5s alternate shake;
+}
+
+.Texts .text {
+  line-height: 1.7em;
+  color: #FF6060;
+  padding: 20px 15px 40px 15px;
+}
+
+.Texts .text ul {
+  padding: 0;
+  margin: 0;
+}
+
+.Texts .text ul li {
+  list-style: none;
+}
+
+.Texts .hide {
+  display: none;
+  height: 0;
+}
+
+.hide {
+  background-color: transparent;
+}
+
+.hide .chevron {
+  display: block;
+}
+
+.hide .chevron_up {
+  display: none;
+}
+
+.chevron {
+  font-size: 24px;
+}
+
+/*keyframe shake*/
 *,
 *::before,
 *::after {

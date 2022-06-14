@@ -3,7 +3,7 @@
 /**
  * array of urls => return promise resolves when all pictures are loaded
  */
- export async function cachePicture(pictures, setIsLoading) {
+ export async function cachePictures(pictures, setIsLoading) {
     const promises = pictures.map((url,i) => {
         return new Promise((resolve, reject) => {
             const img = new Image();

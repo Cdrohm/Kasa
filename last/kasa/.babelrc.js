@@ -21,9 +21,9 @@ module.exports = function (api) {
   var isProd = api.cache.invalidate(() => process.env.NODE_ENV === 'production')
 
   // Note, we also expose the following more-verbose versions of the above examples:
-  /*api.cache.forever() // api.cache(true)
-  api.cache.never() // api.cache(false)
-  api.cache.using(fn) // api.cache(fn)*/
+  //api.cache.forever() // api.cache(true)
+  //api.cache.never() // api.cache(false)
+  //api.cache.using(fn) // api.cache(fn)
 
   // Return the value that will be cached.
   return {}
