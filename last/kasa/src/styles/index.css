@@ -578,7 +578,7 @@ template {
           animation: 0.5s swipeRight;
 }
 
-.ci pict {
+.ci {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,7 +600,7 @@ template {
   padding: 20px;
 }
 
-.ci pict span {
+.ci span {
   color: white;
   font-size: 21px;
   font-weight: 500;
