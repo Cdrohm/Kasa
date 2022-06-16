@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function switchText(type) {
-	const textuals = document.querySelectorAll(".Textual");
+	const textuals = document.querySelectorAll(".texts");
 	const textual = [...textuals].filter(
 		(elt) => elt.querySelector("h3").innerText === type
 	)[0];
