@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function Photo({ hpImg, loc }) {
 	const paysages = [paysage1, paysage2];
-	console.log("hey");
+	//console.log("hey");
 	const choosePaysage = Math.floor(Math.random() * 2);
 	let pictures = [];
 	if (loc) {

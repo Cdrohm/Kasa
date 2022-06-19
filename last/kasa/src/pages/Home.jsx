@@ -21,7 +21,7 @@ function Home() {
 
 	return (
 		<div> 
-			<Photo hpImg={true} />0
+			<Photo hpImg={true} />
 			<Grid locs={locs} />
 		</div>
 	);

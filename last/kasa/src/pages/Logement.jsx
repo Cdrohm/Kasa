@@ -88,7 +88,7 @@ function Housing() {
 
 				<div className="texts">
 					<Texts type="Description" text={description} />
-					<Texts type="Équipements" text={equipments} />
+					<Texts type="Equipements" text={equipments} />
 				</div>
 			</div>
 		</div>

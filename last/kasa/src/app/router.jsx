@@ -15,7 +15,7 @@ function Router() {
 
 	return (
 		<React.StrictMode>
-			<BrowserRouter className="container" basename="/kasa">
+			<BrowserRouter className="container" basename="">
 				 <ProviderLogements>
 					<div className="App">
 						<div className="content">
