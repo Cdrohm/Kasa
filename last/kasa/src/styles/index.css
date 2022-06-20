@@ -728,6 +728,40 @@ template {
   color: #F7F7F7;
 }
 
+.Scroller {
+  position: relative;
+}
+
+.scroll1 {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  padding: 10px;
+  border: 12px solid #FF6060;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s infinite ease-in rotate;
+          animation: 1s infinite ease-in rotate;
+  height: 0;
+  width: 0;
+  opacity: .7;
+}
+
+.scroll2 {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  padding: 12px;
+  border: 10px solid #FF6060;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: .6s infinite ease-in rotate;
+          animation: .6s infinite ease-in rotate;
+  height: 0;
+  width: 0;
+  opacity: .4;
+}
+
 .Tags {
   display: -webkit-box;
   display: -ms-flexbox;

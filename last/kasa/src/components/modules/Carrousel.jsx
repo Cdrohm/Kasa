@@ -34,7 +34,7 @@ function Carrousel({ loc }) {
 		positions.push(100 * i);
 	}
 
-	// STORE DOM elets to State
+	// STORE DOM elts to State
 	function getDomElements() {
 		[...pictsRef] = document.querySelectorAll(".pict");
 		setPicts(pictsRef);
@@ -91,11 +91,13 @@ function Carrousel({ loc }) {
 						}
 						onTouchCancel={() => swipeReset(setStartX, setStartTime)}
 					>
+						{/*arrow L */}
 						<FontAwesomeIcon
 							onClick={() => navig("L")}
 							icon={solid("chevron-left")}
 							className="chevron arrow arrow_left"
 						/>
+						{/*arrow R*/}
 						<FontAwesomeIcon
 							onClick={() => navig("R")}
 							icon={solid("chevron-right")}
