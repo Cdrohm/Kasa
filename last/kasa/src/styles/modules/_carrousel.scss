@@ -56,3 +56,25 @@
 		}
 	}
 }
+
+/*Swipe keyframes / animation for move arrow to L or R*/
+@keyframes swipeLeft {
+	from {
+		transform: scale(100%) translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: scale(120%) translateX(-50px);
+		opacity: 0;
+	}
+}
+@keyframes swipeRight {
+	from {
+		transform: scale(100%) translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: scale(120%) translateX(50px);
+		opacity: 0;
+	}
+}

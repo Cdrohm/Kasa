@@ -578,6 +578,58 @@ template {
           animation: 0.5s swipeRight;
 }
 
+/*Swipe keyframes / animation for move arrow to L or R*/
+@-webkit-keyframes swipeLeft {
+  from {
+    -webkit-transform: scale(100%) translateX(0);
+            transform: scale(100%) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(120%) translateX(-50px);
+            transform: scale(120%) translateX(-50px);
+    opacity: 0;
+  }
+}
+@keyframes swipeLeft {
+  from {
+    -webkit-transform: scale(100%) translateX(0);
+            transform: scale(100%) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(120%) translateX(-50px);
+            transform: scale(120%) translateX(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes swipeRight {
+  from {
+    -webkit-transform: scale(100%) translateX(0);
+            transform: scale(100%) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(120%) translateX(50px);
+            transform: scale(120%) translateX(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes swipeRight {
+  from {
+    -webkit-transform: scale(100%) translateX(0);
+            transform: scale(100%) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(120%) translateX(50px);
+            transform: scale(120%) translateX(50px);
+    opacity: 0;
+  }
+}
+
 .ci {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,8 +792,8 @@ template {
   border: 12px solid #FF6060;
   border-bottom-color: transparent;
   border-radius: 50%;
-  -webkit-animation: 1s infinite ease-in rotate;
-          animation: 1s infinite ease-in rotate;
+  -webkit-animation: 3s infinite ease-in rotate;
+          animation: 3s infinite ease-in rotate;
   height: 0;
   width: 0;
   opacity: .7;
@@ -755,11 +807,33 @@ template {
   border: 10px solid #FF6060;
   border-bottom-color: transparent;
   border-radius: 50%;
-  -webkit-animation: .6s infinite ease-in rotate;
-          animation: .6s infinite ease-in rotate;
+  -webkit-animation: 0.6s infinite ease-in rotate;
+          animation: 0.6s infinite ease-in rotate;
   height: 0;
   width: 0;
   opacity: .4;
+}
+
+/*animation rotation*/
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .Tags {
@@ -855,7 +929,52 @@ template {
   font-size: 24px;
 }
 
-/*keyframe shake*/
+/*keyframes text "shaker" style" for chevrons Up/Down*/
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  15% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  35% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  15% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  35% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 *,
 *::before,
 *::after {
