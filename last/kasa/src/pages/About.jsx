@@ -11,10 +11,12 @@ function About() {
     return (
 		<div className="About">
 			<Photo hpImg={true} />
-            <Texts type="Fiabilité" text={textes.fiabilite} />
-            <Texts type="Respect" text={textes.respect} />
-            <Texts type="Service" text={textes.service} />
-            <Texts type="Sécurité" text={textes.securite} />
+            <div className="AboutTxt">
+                <Texts type="Fiabilité" text={textes.fiabilite} />
+                <Texts type="Respect" text={textes.respect} />
+                <Texts type="Service" text={textes.service} />
+                <Texts type="Sécurité" text={textes.securite} />
+            </div>
 		</div>
 	);
 }
