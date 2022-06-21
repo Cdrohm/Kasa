@@ -13,3 +13,27 @@
 		color: $greyL;
 	}
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+	.Rates {
+		margin: 0;
+		.full {
+			font-size: 18px;
+		}
+		.empty {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.Rates {
+		.full {
+			font-size: 14px;
+		}
+		.empty {
+			font-size: 14px;
+		}
+	}
+}
