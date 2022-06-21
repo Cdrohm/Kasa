@@ -31,3 +31,64 @@
 		}
 	}
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+	.House {
+		.content {
+			.top {
+				flex-direction: column;
+				margin-bottom: 15px;
+				h1 {
+					font-size: 24px;
+				}
+				h3 {
+					font-size: 16px;
+				}
+				.tags {
+					margin-bottom: 10px;
+				}
+				.lessor_rates {
+					flex-direction: row;
+				}
+			}
+			.texts {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 50px;
+				margin-bottom: 70px;
+				align-items: flex-start;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.House {
+		.content {
+			.top {
+				flex-direction: column;
+				margin-bottom: 15px;
+				h1 {
+					font-size: 24px;
+				}
+				h3 {
+					font-size: 16px;
+				}
+				.tags {
+					margin-bottom: 10px;
+				}
+				.lessor_rates {
+					flex-direction: row;
+				}
+			}
+			.texts {
+				display: grid;
+				grid-template-columns: 1fr ;
+				gap: 10px;
+				margin-bottom: 50px;
+				align-items: flex-start;
+			}
+		}
+	}
+}
