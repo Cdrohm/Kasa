@@ -14,3 +14,26 @@
     filter: brightness(1000%);
     margin-bottom: 40px;
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+    .Footer {
+        font-size: 14px;
+    }
+    .logo_footer {
+      width: 80px;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width:768px) {
+    .Footer {
+        font-size: 12px;
+        background-color: $greym;
+        padding: 10vh;
+    }
+    .logo_footer {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+  }
