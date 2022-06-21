@@ -18,3 +18,21 @@
 		text-shadow: 2px 2px 1px rgba(0,0,0,.4);
 	}
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+	.ci {
+		span {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.ci {
+
+        span {
+            display: none;
+        }
+	}
+}

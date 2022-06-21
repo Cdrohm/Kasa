@@ -78,3 +78,33 @@
 		opacity: 0;
 	}
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+	.Carousel {
+		.photo {
+			height: 350px;
+		}
+		.container {
+			height: 350px;
+		}
+		.arrows > .arrow {
+			font-size: 60px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.Carousel {
+		.photo {
+			height: 210px;
+		}
+		.container {
+			height: 210px;
+		}
+		.arrows > .arrow {
+			font-size: 30px;
+			padding: 10px;
+		}
+	}
+}
