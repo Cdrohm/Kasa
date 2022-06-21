@@ -24,3 +24,30 @@
         color: $primary;
     }
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+    .error_name {
+        font-size: 35vw;
+    }
+    .error_txt {
+        font-size: 5vw;
+    }
+    .back_link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .error_name {
+        font-size: 25vw;
+        margin-top: 15vh;
+    }
+    .error_txt {
+        font-size: 5vw;
+    }
+    .back_link {
+        margin: 10vh 0 10vh 0;
+    }
+
+}

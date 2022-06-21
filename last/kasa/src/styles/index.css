@@ -18,6 +18,7 @@
   margin: auto;
 }
 
+/*Responsive*/
 .Error404 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +51,32 @@
   color: #FF6060;
 }
 
+/*Responsive*/
+@media (max-width: 964px) {
+  .error_name {
+    font-size: 35vw;
+  }
+  .error_txt {
+    font-size: 5vw;
+  }
+  .back_link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .error_name {
+    font-size: 25vw;
+    margin-top: 15vh;
+  }
+  .error_txt {
+    font-size: 5vw;
+  }
+  .back_link {
+    margin: 10vh 0 10vh 0;
+  }
+}
+
 .Footer {
   margin-top: auto;
   width: 100%;
@@ -75,6 +102,29 @@
   margin-bottom: 40px;
 }
 
+/*Responsive*/
+@media (max-width: 964px) {
+  .Footer {
+    font-size: 14px;
+  }
+  .logo_footer {
+    width: 80px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    font-size: 12px;
+    background-color: #F7F7F7;
+    padding: 10vh;
+  }
+  .logo_footer {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+}
+
 .Header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,6 +148,34 @@
 
 .Header nav .Link {
   margin-left: 60px;
+}
+
+/*Responsive*/
+@media (max-width: 964px) {
+  .Header {
+    margin: 30px 0;
+    font-size: 18px;
+  }
+  .Header img {
+    width: 150px;
+  }
+  .Header nav > .Link {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    margin: 15px 0;
+    font-size: 12px;
+  }
+  .Header img {
+    width: 100px;
+  }
+  .Header nav > .Link {
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
 }
 
 .House .content .top {
@@ -148,6 +226,79 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+/*Responsive*/
+@media (max-width: 964px) {
+  .House .content .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .House .content .top h1 {
+    font-size: 24px;
+  }
+  .House .content .top h3 {
+    font-size: 16px;
+  }
+  .House .content .top .tags {
+    margin-bottom: 10px;
+  }
+  .House .content .top .lessor_rates {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .House .content .texts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .House .content .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .House .content .top h1 {
+    font-size: 24px;
+  }
+  .House .content .top h3 {
+    font-size: 16px;
+  }
+  .House .content .top .tags {
+    margin-bottom: 10px;
+  }
+  .House .content .top .lessor_rates {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .House .content .texts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -774,28 +925,28 @@ template {
 
 /*Responsive*/
 @media (max-width: 964px) {
-  .Owner {
+  .Lessor {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin: 10px 0 5px 0;
   }
-  .Owner .name {
+  .Lessor .name {
     font-size: 14px;
   }
-  .Owner .picture img {
+  .Lessor .picture img {
     width: 48px;
   }
 }
 
 @media (max-width: 768px) {
-  .Owner {
+  .Lessor {
     margin: 0;
   }
-  .Owner .name {
+  .Lessor .name {
     font-size: 10px;
   }
-  .Owner .picture img {
+  .Lessor .picture img {
     width: 32px;
   }
 }
