@@ -772,6 +772,34 @@ template {
   border-radius: 50%;
 }
 
+/*Responsive*/
+@media (max-width: 964px) {
+  .Owner {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 10px 0 5px 0;
+  }
+  .Owner .name {
+    font-size: 14px;
+  }
+  .Owner .picture img {
+    width: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Owner {
+    margin: 0;
+  }
+  .Owner .name {
+    font-size: 10px;
+  }
+  .Owner .picture img {
+    width: 32px;
+  }
+}
+
 .Photo {
   position: relative;
   top: 0;
@@ -1132,5 +1160,18 @@ body {
 
 .Link:hover {
   text-decoration: underline;
+}
+
+/*Responsive*/
+@media (max-width: 964px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 5%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

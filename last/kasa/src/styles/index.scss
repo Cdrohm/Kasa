@@ -65,3 +65,16 @@ body {
 		text-decoration: underline;
 	}
 }
+
+/*Responsive*/
+@media (max-width: 964px) {
+	.content {
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding: 0 5%;
+	}
+}
