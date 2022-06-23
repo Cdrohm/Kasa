@@ -54,7 +54,7 @@ function Housing() {
     } else {
         locIDs = JSON.parse(storedLocIDs);
     }
-    console.log("IDPAGE", idPage, "LOCIDS", locIDs);
+    //console.log("IDPAGE", idPage, "LOCIDS", locIDs);
 
     // wrong ID => page 404
     if (loc === undefined || !locIDs.includes(idPage)) {
