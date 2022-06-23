@@ -6,24 +6,24 @@
  * @returns A promise that resolves to the element that matches the selector.
  */
  export function mutationNotice(selector) {
-	return new Promise((resolve, reject) => {
-		const observer = new MutationObserver((mutations) => {
-			try {
-				if (document.querySelector(selector)) {
-					resolve(document.querySelector(selector));
-					observer.disconnect();
-				}
-			} catch (err) {
-				console.log("Error getting DOM elements:", err);
-				reject(err);
-			}
-		});
+    return new Promise((resolve, reject) => {
+        const observer = new MutationObserver((mutations) => {
+            try {
+                if (document.querySelector(selector)) {
+                    resolve(document.querySelector(selector));
+                    observer.disconnect();
+                }
+            } catch (err) {
+                console.log("Error getting DOM elements:", err);
+                reject(err);
+            }
+        });
 
-		observer.observe(document.body, {
-			childList: true,
-			subtree: true,
-		});
-	});
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+        });
+    });
 }
 
 /**
@@ -33,22 +33,22 @@
  * @returns A promise that resolves to the element that matches the selector.
  */
 export function mutationNoticeAll(selector) {
-	return new Promise((resolve, reject) => {
-		const observer = new MutationObserver((mutations) => {
-			try {
-				if (document.querySelector(selector)) {
-					resolve(document.querySelector(selector));
-					observer.disconnect();
-				}
-			} catch (err) {
-				console.log("Error getting DOM elements:", err);
-				reject(err);
-			}
-		});
+    return new Promise((resolve, reject) => {
+        const observer = new MutationObserver((mutations) => {
+            try {
+                if (document.querySelector(selector)) {
+                    resolve(document.querySelector(selector));
+                    observer.disconnect();
+                }
+            } catch (err) {
+                console.log("Error getting DOM elements:", err);
+                reject(err);
+            }
+        });
 
-		observer.observe(document.body, {
-			childList: true,
-			subtree: true,
-		});
-	});
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+        });
+    });
 }

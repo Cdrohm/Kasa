@@ -1,14 +1,20 @@
 //Rates for houses
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import {
+    FontAwesomeIcon
+} from '@fortawesome/react-fontawesome'
+import {
+    solid
+} from '@fortawesome/fontawesome-svg-core/import.macro'
 
-function Rates({ rateNum }) {
-	const rates = Array(+rateNum)
-		.fill(1)
-		.concat(Array(5 - rateNum).fill(0));
+function Rates({
+    rateNum
+}) {
+    const rates = Array(+rateNum)
+        .fill(1)
+        .concat(Array(5 - rateNum).fill(0));
 
-	return (
-		<div className="Rates">
+    return (
+        <div className="Rates">
 			{rates.map((rate, i) => {
 				return (
 					<span key={`rate-${i}`}>
@@ -21,7 +27,7 @@ function Rates({ rateNum }) {
 				);
 			})}
 		</div>
-	);
+    );
 }
 
 export default Rates;

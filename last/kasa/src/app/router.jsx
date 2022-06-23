@@ -1,5 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+    BrowserRouter,
+    Route,
+    Routes
+} from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -7,14 +11,16 @@ import Home from "../pages/Home";
 import Housing from "../pages/Logement";
 import About from "../pages/About";
 import Error from "../pages/Error";
-import { ProviderLogements } from "../utils/context_Housing";
+import {
+    ProviderLogements
+} from "../utils/context_Housing";
 
 
 function Router() {
-	
 
-	return (
-		<React.StrictMode>
+
+    return (
+        <React.StrictMode>
 			<BrowserRouter className="container" basename="">
 				 <ProviderLogements>
 					<div className="App">
@@ -32,7 +38,7 @@ function Router() {
 				</ProviderLogements>
 			</BrowserRouter>
 		</React.StrictMode>
-	);
+    );
 }
 
 export default Router;

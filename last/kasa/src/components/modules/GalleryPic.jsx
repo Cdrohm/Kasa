@@ -1,6 +1,10 @@
-function GalleryPic({ i, len, picture }) {
-	return (
-		<>
+function GalleryPic({
+    i,
+    len,
+    picture
+}) {
+    return (
+        <>
 			<div
 				className="ci pict"
 				id={`pict-${i}`}
@@ -9,7 +13,7 @@ function GalleryPic({ i, len, picture }) {
 				<span>{`${i + 1}/${len}`}</span>
 			</div>
 		</>
-	);
+    );
 }
 
 export default GalleryPic;

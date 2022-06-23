@@ -1,11 +1,15 @@
 //Lessor
+function Lessor({
+    host
+}) {
+    const {
+        name,
+        picture
+    } = host;
+    const [firstname, ...lastname] = name.split(" ");
 
-function Lessor({ host }) {
-	const { name, picture } = host;
-	const [firstname, ...lastname] = name.split(" ");
-
-	return (
-		<div className="Lessor">
+    return (
+        <div className="Lessor">
 				<span className="name">
 					{firstname}
 					<br />
@@ -15,7 +19,7 @@ function Lessor({ host }) {
 				<img src={picture} alt="lessor" />
 			</div>
 		</div>
-	);
+    );
 }
 
 export default Lessor;
