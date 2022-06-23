@@ -643,12 +643,12 @@ template {
   display: none;
 }
 
-.Carrousel {
+.Gallery {
   border-radius: 30px;
   overflow: hidden;
 }
 
-.Carrousel .photo {
+.Gallery .photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +665,7 @@ template {
   background-color: #F7F7F7;
 }
 
-.Carrousel .container {
+.Gallery .container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,7 +681,7 @@ template {
   background-color: #F7F7F7;
 }
 
-.Carrousel .arrows {
+.Gallery .arrows {
   position: absolute;
   top: 0;
   left: 0;
@@ -699,7 +699,7 @@ template {
           align-items: center;
 }
 
-.Carrousel .arrows .arrow {
+.Gallery .arrows .arrow {
   padding: 20px;
   font-size: 80px;
   color: white;
@@ -707,27 +707,27 @@ template {
           filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 
-.Carrousel .arrows .arrow:active {
+.Gallery .arrows .arrow:active {
   -webkit-transform: scale(120%);
           transform: scale(120%);
   color: #FF6060;
 }
 
-.Carrousel .arrows .arrow_left {
+.Gallery .arrows .arrow_left {
   padding-right: 50px;
 }
 
-.Carrousel .arrows .arrow_left:hover {
+.Gallery .arrows .arrow_left:hover {
   cursor: pointer;
   -webkit-animation: 0.5s swipeLeft;
           animation: 0.5s swipeLeft;
 }
 
-.Carrousel .arrows .arrow_right {
+.Gallery .arrows .arrow_right {
   padding-left: 50px;
 }
 
-.Carrousel .arrows .arrow_right:hover {
+.Gallery .arrows .arrow_right:hover {
   cursor: pointer;
   -webkit-animation: 0.5s swipeRight;
           animation: 0.5s swipeRight;
@@ -1197,22 +1197,22 @@ template {
   }
 }
 
-.Texts {
+.Collapse {
   margin-top: 20px;
   border-radius: 10px;
   background-color: #F7F7F7;
   height: 100%;
 }
 
-.Texts .chevron {
+.Collapse .chevron {
   display: block;
 }
 
-.Texts .chevron_down {
+.Collapse .chevron_down {
   display: none;
 }
 
-.Texts .cap {
+.Collapse .cap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,31 +1227,31 @@ template {
   background-color: #FF6060;
 }
 
-.Texts .cap:hover {
+.Collapse .cap:hover {
   cursor: pointer;
 }
 
-.Texts .cap:hover > .chevron {
+.Collapse .cap:hover > .chevron {
   -webkit-animation: 0.5s alternate shake;
           animation: 0.5s alternate shake;
 }
 
-.Texts .text {
+.Collapse .text {
   line-height: 1.7em;
   color: #FF6060;
   padding: 20px 15px 40px 15px;
 }
 
-.Texts .text ul {
+.Collapse .text ul {
   padding: 0;
   margin: 0;
 }
 
-.Texts .text ul li {
+.Collapse .text ul li {
   list-style: none;
 }
 
-.Texts .hide {
+.Collapse .hide {
   display: none;
   height: 0;
 }

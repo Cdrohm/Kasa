@@ -3,12 +3,12 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { useState, useEffect } from "react";
 import React from 'react';
 
-import CarrouselPic from "./CarrouselPic";
-import { swipeIn, swipeOut, swipeReset } from "../../app/carrouselNav";
+import GalleryPic from "./GalleryPic";
+import { swipeIn, swipeOut, swipeReset } from "../../app/galleryNav";
 import Scroller, { cachePictures } from "./Scroller";
 import { mutationNotice } from "../../app/observer";
 
-function Carrousel({ loc }) {
+function Gallery({ loc }) {
 	
 	// Loading
 	const pictures = loc.pictures;
@@ -22,13 +22,14 @@ function Carrousel({ loc }) {
 	let [startTime, setStartTime] = useState(null);
 
 	
-	// Carrousel 
+	// Gallery
 	// wait dom elt for load
 	mutationNotice(`#pict-${pictures.length - 1}`).then(() => getDomElements());
 	const [picts, setPicts] = useState([]);
 	const arrayLen = pictures.length;
 	const positions = [];
 	let pictsRef;
+
 	// init positions array in width %
 	for (let i = -1; i < arrayLen - 1; i++) {
 		positions.push(100 * i);
@@ -67,7 +68,7 @@ function Carrousel({ loc }) {
 	}
 
 	return (
-		<div className="Carrousel">
+		<div className="Gallery">
 			{isLoading ? ( // Scroller loader
 				<div className="photo" style={{ justifyContent: "center" }}>
 					<Scroller />
@@ -81,7 +82,7 @@ function Carrousel({ loc }) {
 				// > 1 photo - carrousel with arrows
 				<div className="container">
 					{pictures.map((picture, i, array) => {
-						return <CarrouselPic i={i} len={array.length} picture={picture} key={`pict-${i}`} />;
+						return <GalleryPic i={i} len={array.length} picture={picture} key={`pict-${i}`} />;
 					})}
 					<div
 						className="arrows"
@@ -110,4 +111,4 @@ function Carrousel({ loc }) {
 	);
 }
 
-export default Carrousel;
+export default Gallery;

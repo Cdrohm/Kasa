@@ -1,4 +1,4 @@
-function CarrouselPic({ i, len, picture }) {
+function GalleryPic({ i, len, picture }) {
 	return (
 		<>
 			<div
@@ -12,4 +12,4 @@ function CarrouselPic({ i, len, picture }) {
 	);
 }
 
-export default CarrouselPic;
+export default GalleryPic;

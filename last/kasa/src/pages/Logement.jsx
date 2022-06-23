@@ -5,8 +5,8 @@ import { ContextHousing } from "../utils/context_Housing";
 import Tags from "../components/modules/Tags";
 import Lessor from "../components/modules/Lessor";
 import Rates from "../components/modules/Rates";
-import Texts from "../components/modules/Texts";
-import Carrousel from "../components/modules/Carrousel";
+import Collapse from "../components/modules/Collapse";
+import Gallery from "../components/modules/Gallery";
 
 function Housing() {
 	const { idPage } = useParams();
@@ -69,7 +69,7 @@ function Housing() {
 	return (
 		<div className="House">
 			<div className="cover">
-				<Carrousel loc={loc} />
+				<Gallery loc={loc} />
 			</div>
 			<div className="content">
 				<div className="top">
@@ -87,8 +87,8 @@ function Housing() {
 				</div>
 
 				<div className="texts">
-					<Texts type="Description" text={description} />
-					<Texts type="Equipements" text={equipments} />
+					<Collapse type="Description" text={description} />
+					<Collapse type="Equipements" text={equipments} />
 				</div>
 			</div>
 		</div>

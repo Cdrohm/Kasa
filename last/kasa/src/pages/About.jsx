@@ -1,5 +1,5 @@
 import Photo from "../components/modules/Picture";
-import Texts from "../components/modules/Texts"
+import Collapse from "../components/modules/Collapse";
 
 function About() {
     const textes = {
@@ -12,10 +12,10 @@ function About() {
 		<div className="About">
 			<Photo hpImg={true} />
             <div className="AboutTxt">
-                <Texts type="Fiabilité" text={textes.fiabilite} />
-                <Texts type="Respect" text={textes.respect} />
-                <Texts type="Service" text={textes.service} />
-                <Texts type="Sécurité" text={textes.securite} />
+                <Collapse type="Fiabilité" text={textes.fiabilite} />
+                <Collapse type="Respect" text={textes.respect} />
+                <Collapse type="Service" text={textes.service} />
+                <Collapse type="Sécurité" text={textes.securite} />
             </div>
 		</div>
 	);

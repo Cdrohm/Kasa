@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function switchText(type) {
-	const textuals = document.querySelectorAll(".Texts");
+	const textuals = document.querySelectorAll(".Collapse");
 	console.log(type);
 	console.log(textuals);
 	const textual = [...textuals].filter(
@@ -24,9 +24,9 @@ function switchText(type) {
  * @param {*} param0 
  * @returns 
  */
-function Texts({ type, text }) {
+function Collapse({ type, text }) {
 	return (
-		<div className="Texts hide">
+		<div className="Collapse hide">
 			
 			<h3 className="cap" onClick={() => switchText(type)}>
 				<span>{type}</span>
@@ -56,4 +56,4 @@ function Texts({ type, text }) {
 	);
 }
 
-export default Texts;
+export default Collapse;
