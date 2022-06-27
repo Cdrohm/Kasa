@@ -11,6 +11,7 @@ import Home from "../pages/Home";
 import Housing from "../pages/Logement";
 import About from "../pages/About";
 import Error from "../pages/Error";
+//Provider = fournisseur (parents)
 import {
     ProviderLogements
 } from "../utils/context_Housing";
